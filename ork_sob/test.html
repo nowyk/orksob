@@ -2,15 +2,16 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>W Obiektywie - Orkiestra Dęta Sobolów</title>
-    <meta name="description" content="Zobacz naszą galerię zdjęć z koncertów, prób i ważnych wydarzeń Orkiestry Dętej Sobolów. Przeżyj z nami muzyczne chwile." />
+    <title>TEST</title>
+    <meta name="description" content="Oficjalna strona Orkiestry Dętej Sobolów. Dowiedz się więcej o naszej historii, koncertach i wydarzeniach muzycznych." />
     <meta name="keywords" content="Orkiestra Dęta Sobolów, koncerty, muzyka, orkiestra, zespół muzyczny" />
     <meta name="author" content="Dawid Nowak" />
     <meta name="robots" content="index, follow" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="phone.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/main.css" />
     </noscript>
@@ -23,21 +24,29 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <link rel="mask-icon" href="favicon/favicon.svg" color="#ffffff" />
 
-    <meta property="og:title" content="W Obiektywie - Orkiestra Dęta Sobolów" />
+    <meta property="og:title" content="Orkiestra Dęta Sobolów - Oficjalna Strona" />
     <meta property="og:description" content="Poznaj naszą orkiestrę, sprawdź nadchodzące wydarzenia i posłuchaj muzyki na żywo!" />
-    <meta property="og:image" content="images/og.jpg" />
-    <meta property="og:url" content="https://orkiestra-sobolow.pl/foto.html" />
-    <meta property=" og:type" content="website" />
+    <meta property="og:image" content="favicon/apple-touch-icon.png" />
+    <meta property="og:url" content="https://twojadomena.pl" />
+    <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Orkiestra Dęta Sobolów" />
     <meta name="twitter:description" content="Poznaj naszą orkiestrę i sprawdź nadchodzące koncerty!" />
-    <meta name="twitter:image" content="images/og.jpg" />
+    <meta name="twitter:image" content="favicon/apple-touch-icon.png" />
   </head>
 
   <body class="is-preload">
     <!-- Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro" style="text-align: left">
+        <h1 style="width: 80%; user-select: none">Orkiestra<br />Dęta<br />Sobolów</h1>
+        <ul class="actions">
+          <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+      </div>
+
       <!-- Header -->
       <header id="header">
         <a href="index.html" class="logo">Orkiestra Dęta Sobolów</a>
@@ -46,10 +55,10 @@
       <!-- Nav -->
       <nav id="nav">
         <ul class="links">
-          <li><a href="index.html">Orkiestra</a></li>
+          <li class="active"><a href="index.html">Orkiestra</a></li>
           <li><a href="history.html">Historia</a></li>
           <li><a href="school.html">Szkoła muzyczna</a></li>
-          <li class="active"><a href="foto.html">W obiktywie</a></li>
+          <li><a href="foto.html">W obiktywie</a></li>
           <li><a href="coop.html">Współpraca</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -65,11 +74,7 @@
 
       <!-- Main -->
       <div id="main">
-        <section class="post">
-          <header class="major">
-            <h2>Galeria <br />zdjęć</h2>
-          </header>
-
+        <article>
           <div class="row" style="place-items: center; text-align: center">
             <div class="col-6 col-12-small" style="text-align: center">
               <a href="#" class="image fit" data-full="images/f1.webp"><img src="images/f1.webp" alt="" /></a>
@@ -99,28 +104,72 @@
 
           <!-- Lightbox overlay -->
           <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <img id="lightbox-img" src="" alt="" />
+            <img id="lightbox-img" src="" alt="Powiększone zdjęcie" />
           </div>
-        </section>
-        <footer>
-          <div class="pagination">
-            <a href="#" class="page active">1</a>
-            <a href="foto1.html" class="page">2</a>
-            <a href="foto2.html" class="page">3</a>
-            <a href="foto1.html" class="next">Next</a>
-          </div>
-        </footer>
+        </article>
+
+        <a href="" class="image main"><img src="images/i1.jpg" alt="Orkiestra Dęta Sobolów" /></a>
+
+        <!-- Gallery  -->
+        <div class="gallery">
+          <article class="from-left">
+            <a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+          </article>
+          <article class="from-right">
+            <a href="images/bg1.jpg" class="image fit"><img src="images/bg1.jpg" title="Airchitecture II" alt="" /></a>
+          </article>
+          <article class="from-left">
+            <a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+          </article>
+          <article class="from-right">
+            <a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+          </article>
+          <article class="from-left">
+            <a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+          </article>
+          <article class="from-right">
+            <a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+          </article>
+        </div>
+        <!-- Featured Post -->
+        <article class="post featured">
+          <header class="major">
+            <h2>
+              Witamy w <br />
+              Sobolowie!
+            </h2>
+            Orkiestra Dęta Sobolów to społeczność pasjonatów muzyki, działająca nieprzerwanie od 2001 roku.
+
+            <div class="phone-wrapper">
+              <!-- Ramka telefonu -->
+              <img src="phone-frame.png" alt="Phone Frame" class="phone-frame" />
+
+              <!-- Zawartość telefonu -->
+              <div class="phone-content">
+                <img src="combined-image.png" alt="" class="parallax-image" />
+              </div>
+            </div>
+          </header>
+        </article>
       </div>
 
       <!-- Footer -->
       <footer id="footer">
         <section class="split contact">
           <section>
-            <h3>Email</h3>
-            <p><a href="mailto:sobolow.orkiestra@gmail.com">sobolow.orkiestra@gmail.com</a></p>
+            <h3>Adres</h3>
+            <p>32-742 Sobolów, POLAND</p>
+          </section>
+          <section>
+            <h3>Telefon</h3>
+            <p>+48 603 431 026</p>
           </section>
         </section>
         <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p><a href="mailto:sobolow.orkiestra@gmail.com">sobolow.orkiestra@gmail.com</a></p>
+          </section>
           <section>
             <h3>Sociale</h3>
             <ul class="icons alt">
@@ -151,6 +200,9 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="phone.js"></script>
+
     <script src="assets/js/lightbox.js"></script>
+    <script src="cookie.js"></script>
   </body>
 </html>
