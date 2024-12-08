@@ -3494,3 +3494,32 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     opacity: 1;
   }
 }
+
+/* Ukrycie elementów przed animacją */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.from-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease-out;
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
